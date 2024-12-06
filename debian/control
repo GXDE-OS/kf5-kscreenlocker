@@ -48,6 +48,7 @@ Depends: kf5-libkscreenlocker5 (= ${binary:Version}),
          ${misc:Depends},
          ${perl:Depends},
          ${shlibs:Depends},
+Conflicts:kde-config-screenlocker
 Description: KCM Module for kscreenlocker
  KDE systemsettings module to configure kscreenlocker.
  .
@@ -68,6 +69,7 @@ Section: libdevel
 Architecture: any
 Multi-Arch: same
 Depends: kf5-libkscreenlocker5 (= ${binary:Version}), ${misc:Depends}
+Conflicts: kscreenlocker-dev
 Description: Development files for kscreenlocker
  KDE systemsettings module to configure kscreenlocker.
  .
@@ -90,6 +92,8 @@ Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: kwin-common (<< 4:5.23.90~), kwin-common (>> 4:5.24.70~)
 Recommends: kf5-kde-config-screenlocker
 Multi-Arch: same
+Conflicts:libkscreenlocker6
+Provides: libkscreenlocker5
 Description: Secure lock screen architecture
  KDE systemsettings module to configure kscreenlocker.
  .
