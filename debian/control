@@ -93,7 +93,7 @@ Breaks: kwin-common (<< 4:5.23.90~), kwin-common (>> 4:5.24.70~)
 Recommends: kf5-kde-config-screenlocker
 Multi-Arch: same
 Conflicts:libkscreenlocker6
-Provides: libkscreenlocker5
+Provides: libkscreenlocker5(=5.24.3-2deepin1)
 Description: Secure lock screen architecture
  KDE systemsettings module to configure kscreenlocker.
  .
