@@ -42,9 +42,9 @@ Vcs-Git: https://salsa.debian.org/qt-kde-team/kde/kscreenlocker.git
 Vcs-Browser: https://salsa.debian.org/qt-kde-team/kde/kscreenlocker
 Rules-Requires-Root: no
 
-Package: kde-config-screenlocker
+Package: kf5-kde-config-screenlocker
 Architecture: any
-Depends: libkscreenlocker5 (= ${binary:Version}),
+Depends: kf5-libkscreenlocker5 (= ${binary:Version}),
          ${misc:Depends},
          ${perl:Depends},
          ${shlibs:Depends},
@@ -63,11 +63,11 @@ Description: KCM Module for kscreenlocker
  .
  This package contains the KCM settings module for kscreenlocker.
 
-Package: kscreenlocker-dev
+Package: kf5-kscreenlocker-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
-Depends: libkscreenlocker5 (= ${binary:Version}), ${misc:Depends}
+Depends: kf5-libkscreenlocker5 (= ${binary:Version}), ${misc:Depends}
 Description: Development files for kscreenlocker
  KDE systemsettings module to configure kscreenlocker.
  .
@@ -83,12 +83,12 @@ Description: Development files for kscreenlocker
  .
  This package contains development files for kscreenlocker.
 
-Package: libkscreenlocker5
+Package: kf5-libkscreenlocker5
 Architecture: any
 Pre-Depends: psmisc
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: kwin-common (<< 4:5.23.90~), kwin-common (>> 4:5.24.70~)
-Recommends: kde-config-screenlocker
+Recommends: kf5-kde-config-screenlocker
 Multi-Arch: same
 Description: Secure lock screen architecture
  KDE systemsettings module to configure kscreenlocker.
