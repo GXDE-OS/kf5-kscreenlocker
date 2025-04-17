@@ -1,6 +1,7 @@
-kscreenlocker (5.24.3-2deepin1) unstable; urgency=medium
+kscreenlocker (5.24.3-3gxde1) unstable; urgency=medium
 
   * Normalize ver2 (XdeepinY).
+  * Support Debian 13
 
  -- Tianyu Chen <sweetyfish@deepin.org>  Tue, 27 Aug 2024 16:04:15 +0800
 
